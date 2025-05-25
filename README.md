@@ -36,7 +36,7 @@ Este projeto é um **chatbot simples em HTML e JavaScript** que reconhece as emo
 
 ## 🏗️ Tecnologias Utilizadas
 - HTML + JavaScript
-- Firebase Realtime Database (opcional)
+- Firebase Realtime Database
 - Tailwind CSS para estilo
 
 ---
