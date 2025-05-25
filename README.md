@@ -20,12 +20,53 @@ Este projeto tem como objetivo ajudar pessoas que precisam de apoio emocional, p
    <img width="12" />
 </div>
 
+# 🤖 Chatbot de Emoções
+
+Este projeto é um **chatbot simples em HTML e JavaScript** que reconhece as emoções do usuário e responde de forma amigável. Ele utiliza o Firebase para salvar o histórico de conversas (opcional).
+
+---
+
+## 🚀 Funcionalidades
+- Detecta emoções a partir do texto (feliz, triste, bravo, ansioso).
+- Exibe respostas específicas para cada emoção.
+- Histórico de conversa salvo localmente e (opcionalmente) no Firebase.
+- Design simples com Tailwind CSS.
+
+---
+
+## 🏗️ Tecnologias Utilizadas
+- HTML + JavaScript
+- Firebase Realtime Database (opcional)
+- Tailwind CSS para estilo
+
+---
+
+## 📂 Estrutura do Projeto
+
+/
+├── index.html
+├── app.js
+└── README.md
 
 
 ### 🚦Rotas da Aplicação
 `https://pi-senac-1f6f4.web.app/`  
 
-   
+
+---
+
+## 🖥️ Como Rodar o Projeto Localmente
+
+### Clone o Repositório
+```bash
+git clone https://github.com/GersonJrr/PI-Senac.git
+cd PI-Senac
+
+-- 
+
+Abra o index.html no Navegador
+
+--
 
 
 
