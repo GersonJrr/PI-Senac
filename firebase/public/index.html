@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatbot de Emoções</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
+
+    <style>
+        .scrollbar-hidden::-webkit-scrollbar {
+            display: none;
+        }
+        .typing-animation {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body class="bg-green-50 from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-white rounded-xl shadow-xl overflow-hidden">
+       
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-4 text-center">
+            <h2 class="text-xl font-bold">💙 Emotion Helper</h2>
+            <p class="text-sm opacity-90">Estou aqui para te ouvir e apoiar</p>
+        </div>
+
+        <div id="chat-messages" class="h-96 p-4 bg-gray-50 overflow-y-auto scrollbar-hidden space-y-3">
+            
+        </div>
+
+        <div class="p-3 border-t border-gray-200 flex">
+            <input
+                id="user-input"
+                type="text"
+                placeholder="Digite como você está se sentindo..."
+                class="flex-1 px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+            />
+            <button
+                id="send-btn"
+                class="ml-2 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 active:scale-95"
+            >
+                Enviar
+            </button>
+        </div>
+
+       
+        <div class="p-3 grid grid-cols-2 gap-2">
+            <button
+                data-emotion="feliz"
+                class="emotion-btn flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-200 rounded-full hover:bg-green-50 hover:border-green-300 transition-all"
+            >
+                😊 Feliz
+            </button>
+            <button
+                data-emotion="triste"
+                class="emotion-btn flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-200 rounded-full hover:bg-blue-50 hover:border-blue-300 transition-all"
+            >
+                😢 Triste
+            </button>
+            <button
+                data-emotion="bravo"
+                class="emotion-btn flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-200 rounded-full hover:bg-red-50 hover:border-red-300 transition-all"
+            >
+                😠 Bravo
+            </button>
+            <button
+                data-emotion="ansioso"
+                class="emotion-btn flex items-center justify-center gap-1 px-3 py-2 bg-white border border-gray-200 rounded-full hover:bg-yellow-50 hover:border-yellow-300 transition-all"
+            >
+                😰 Ansioso
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"> </script>
+</body>
+</html>
