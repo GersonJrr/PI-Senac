@@ -4,6 +4,13 @@ Grupo: 8
 
 Este projeto tem como objetivo ajudar pessoas que precisam de apoio emocional, podendo conversar com o chat para seu auxilio, utilizei tecnologia como: **HTML**,**Firebase**,**Tailwind CSS**, **JavaScript**
 
+
+## Link video:
+https://youtu.be/CeDOP4i69dg
+
+--
+
+
 ## 🚀 Tecnologias Utilizadas
 
 <div align="left">
